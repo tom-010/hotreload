@@ -14,3 +14,9 @@ To configure the poll interval (default 500ms), add this BEFORE the script:
 ```html
 <script>window.poll_interval = 2000</script>
 ```
+
+To reload css automatically add `reload="1"` to the tag, like:
+
+```html
+<link reload="1" rel="stylesheet" type="text/css" href="test.css" />
+```
