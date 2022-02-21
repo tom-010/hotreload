@@ -1,7 +1,10 @@
-var poll_interval = 1000;
+if (!window.poll_interval) {
+    window.poll_interval = 500;
+}
 
 current = '';
 setInterval(function() {
+    console.log('poll')
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState == XMLHttpRequest.DONE) {
@@ -16,4 +19,4 @@ setInterval(function() {
     };
     xmlhttp.open("GET", window.location.href, true);
     xmlhttp.send();
-}, poll_interval);
+}, window.poll_interval);

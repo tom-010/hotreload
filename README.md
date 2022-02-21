@@ -9,14 +9,8 @@ Copy & Paste this:
 <script src="https://cdn.jsdelivr.net/gh/tom-010/hotreload/hotreload.js"></script>
 ```
 
+To configure the poll interval (default 500ms), add this BEFORE the script:
+
 ```html
-<html>
-
-<body>
-    <h1>Test</h1>
-
-    <script src="https://cdn.jsdelivr.net/gh/tom-010/hotreload/hotreload.js"></script>
-</body>
-
-</html>
+<script>window.poll_interval = 2000</script>
 ```
