@@ -1,7 +1,7 @@
 hotreload
 =========
 
-Add hot reload on static pages.
+Add hot reload on static pages via polling.
 
 Copy & Paste this:
 
