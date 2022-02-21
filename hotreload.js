@@ -7,7 +7,7 @@ observe(window.location.href, function(new_version) {
 })
 
 for (url of reloadableCssFiles()) {
-    observe(url, (content) => {
+    observe(url, (_) => {
         const link = findStylesheetByUrl(url)
         if (!link) return
         link.href = link.href.replace(/\?.*|$/, "?" + Date.now())
