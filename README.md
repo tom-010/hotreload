@@ -9,7 +9,7 @@ Add hot reload on static pages.
 <body>
     <h1>Test</h1>
 
-    <script src="hotreload.js"></script>
+    <script src="https://github.com/tom-010/hotreload/blob/master/hotreload.js"></script>
 </body>
 
 </html>
